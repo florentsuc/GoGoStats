@@ -1,0 +1,91 @@
+// bower:scss
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+body {
+    font-family: "Open Sans";
+}
+
+header {
+    &.bar {
+        background-color: #eb1478;
+
+        .title {
+            color: #fff;
+        }
+    }
+}
+
+.content {
+
+    &.loaded {
+
+        margin-top: 20px;
+        padding: 0 15px;
+        padding-top: 44px;
+
+        .balance {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            background-color: #f5f5f5;
+
+            .complete {
+                background-color: #00b998;
+                height: 30px;
+            }
+        }
+
+        .bottom-row {
+            color: #6a6a6a;
+            overflow: auto;
+            width: 100%;
+
+            .percent {
+                float: left;
+                width: 19%;
+                font-weight: bold;
+            }
+
+            .time-left {
+                float: right;
+                width: 80%;
+                text-align: right;
+            }
+        }
+
+        .card {
+            margin: 40px 0 20px 0;
+        }
+    }
+
+    &.loading {
+        background-color: #eb1478;
+        color: #fff;
+        display: table;
+        height: 100%;
+        width: 100%;
+        padding-top: 0;
+
+        .titles {
+            font-family: "Open Sans";
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            text-align: center;
+
+            h1 {
+                font-weight: 400;
+                margin-bottom: 40px;
+            }
+
+            h3 {
+                font-weight: 400;
+            }
+        }
+        
+    }
+}
