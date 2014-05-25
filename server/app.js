@@ -6,7 +6,6 @@
 var express 	= require('express');
 var path 		= require('path');
 var config 		= require('./config/config.json');
-var mongoose 	= require('mongoose');
 var app 		= express();
 
 if('production' == app.settings.env) {
