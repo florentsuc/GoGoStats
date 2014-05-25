@@ -33,9 +33,17 @@ header {
         .progress-bar {
             background-color: #f5f5f5;
 
+
+
             .complete {
                 background-color: #00b998;
                 height: 30px;
+                width: 0px;
+
+                -webkit-transition: width 1s ease-in-out;
+            -moz-transition: width 1s ease-in-out;
+            -o-transition: width 1s ease-in-out;
+            transition: width 1s ease-in-out;
             }
         }
 
@@ -63,12 +71,22 @@ header {
     }
 
     &.loading {
+
         background-color: #eb1478;
         color: #fff;
         display: table;
         height: 100%;
         width: 100%;
         padding-top: 0;
+
+        &.ng-hide-add {
+            animation: bounceOutDown 1s;
+            display: table !important;
+        }
+
+        &.ng-hide-remove {
+            animation: fadeOutDown 1s;
+        }
 
         .titles {
             font-family: "Open Sans";
@@ -86,6 +104,5 @@ header {
                 font-weight: 400;
             }
         }
-        
     }
 }
