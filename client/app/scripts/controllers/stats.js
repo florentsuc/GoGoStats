@@ -20,7 +20,7 @@ angular.module('clientApp')
 			// Trick animate progressbar after hiding the loading screen
 			$timeout(function() {
 				$scope.percentage = info.percentage;
-			}, 0);
+			}, 500);
 		});
 	}
 );

@@ -33,17 +33,21 @@ header {
         .progress-bar {
             background-color: #f5f5f5;
 
-
-
             .complete {
                 background-color: #00b998;
                 height: 30px;
                 width: 0px;
 
-                -webkit-transition: width 1s ease-in-out;
-            -moz-transition: width 1s ease-in-out;
-            -o-transition: width 1s ease-in-out;
-            transition: width 1s ease-in-out;
+                -webkit-transform: translateZ(0);
+                -moz-transform: translateZ(0);
+                -ms-transform: translateZ(0);
+                -o-transform: translateZ(0);
+                transform: translateZ(0);
+
+                -webkit-transition: width 0.5s ease-in-out;
+                -moz-transition: width 0.5s ease-in-out;
+                -o-transition: width 0.5s ease-in-out;
+                transition: width 0.5s ease-in-out;
             }
         }
 
