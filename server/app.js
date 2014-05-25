@@ -48,6 +48,6 @@ var gogoRoutes = require('./routes/gogoRoute.js');
 
 app.get('/api/info/:projectID', gogoRoutes.getInfo);
 
-app.listen(config.port, function(){
+app.listen(process.env.PORT || config.port, function(){
   console.log("Express server listening on port %d in %s mode", config.port, app.settings.env);
 });
