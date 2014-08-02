@@ -33,7 +33,10 @@ exports.getProjectInfo = function(projectID) {
 		}
 
 		request({
-			uri: resources.GOGO_URL+projectID+'/show_tab/pledges'
+			uri: resources.GOGO_URL+projectID+'/show_tab/pledges',
+			headers: {
+				'X-Requested-With':'XMLHttpRequest'
+			}
 		}, function(error, response, body) {
 			var $$ = cheerio.load(body);
 
