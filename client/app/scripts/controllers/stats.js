@@ -17,9 +17,8 @@ angular.module('clientApp')
 			$scope.lastPledges = info.lastPledges;
 			$scope.loaded = true;
 
-			// Trick animate progressbar after hiding the loading screen
-			$timeout(function() {
-				$scope.percentage = info.percentage;
+			$timeout(function() {				
+				$scope.percentage = parseInt(info.percentage.replace(',',''));
 			}, 500);
 		});
 	}

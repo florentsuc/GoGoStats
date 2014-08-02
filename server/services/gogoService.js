@@ -48,7 +48,7 @@ exports.getProjectInfo = function(projectID) {
 };
 
 function getName($) {
-	return $('.i-campaign-page > h1').text();
+	return $('.i-campaign-page h1').text();
 }
 
 function getBalance($) {

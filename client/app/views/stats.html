@@ -6,12 +6,12 @@
 	<h1 class="balance">{{ balance }}</h1>
 
 	<div class="progress-bar">
-		<div class="complete" style="width: {{ percentage }}"></div>
+		<div class="complete" style="width: {{ {true: 100, false: percentage}[percentage>100] }}%"></div>
 	</div>
 
 	<div class="bottom-row">
 		<div class="percent">
-			{{ percentage }}
+			{{ percentage }}%
 		</div>
 		<div class="time-left">
 			<i class="fa fa-clock-o"></i>
